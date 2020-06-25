@@ -406,11 +406,11 @@ p {
 }
 
 .testimonial__avatar:nth-child(odd) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .testimonial__avatar:nth-child(even) {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .testimonial__speech-bubble {
@@ -420,9 +420,34 @@ p {
 }
 
 .testimonial__speech-bubble p {
-    color: var(--color-light-grey);
+  color: var(--color-light-grey);
 }
 
 .testimonial__speech-bubble a {
-    color: var(--color-pink);
+  color: var(--color-pink);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-custom-blue);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact__links i:hover {
+  color: var(--color-custom-light-yellow);
+  animation: all var(--animation-duration) ease;
 }
