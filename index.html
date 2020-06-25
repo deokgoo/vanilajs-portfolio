@@ -1,264 +1,275 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deok's Portfolio</title>
-    <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
-    <meta name="description" content="deok's history portfolio" />
-    <meta name="author" content="deok" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/app.js" defer></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">deok</a>
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deok's Portfolio</title>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.ico"/>
+  <meta name="description" content="deok's history portfolio"/>
+  <meta name="author" content="deok"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="navbar__logo">
+    <i class="fab fa-diaspora"></i>
+    <a href="#">deok</a>
+  </div>
+  <ul class="navbar__menu">
+    <li class="navbar__menu__item active">Home</li>
+    <li class="navbar__menu__item">About</li>
+    <li class="navbar__menu__item">Skill</li>
+    <li class="navbar__menu__item">My Work</li>
+    <li class="navbar__menu__item">Testimonials</li>
+    <li class="navbar__menu__item">Contact</li>
+  </ul>
+</nav>
+<!-- Home -->
+<section id="home">
+  <img class="home__avatar"
+       src="https://avatars3.githubusercontent.com/u/20182365?s=400&u=b42f8d09da0bbba0a1aa030e2f2a184ecad8510f&v=4"
+       alt="it's deok9" />
+  <h1 class="home__title">
+    Hello, <br/>
+    I'm deokgoo
+  </h1>
+  <h2 class="home__description">Frontend Developer</h2>
+  <button class="home__contact">Contact Me</button>
+</section>
+<!-- About -->
+<section id="about" class="section section__container">
+  <h1>About me</h1>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ducimus
+    eos quidem at molestias fugit non modi, velit voluptate illo nesciunt
+    voluptatum, sed magnam harum. Sequi dolores quidem laborum molestias.
+  </p>
+  <div class="about__majors">
+    <div class="major">
+      <div class="major__icons">
+        <i class="fab fa-vuejs"></i>
       </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skill</li>
-        <li class="navbar__menu__item">My Work</li>
-        <li class="navbar__menu__item">Testimonials</li>
-        <li class="navbar__menu__item">Contact</li>
-      </ul>
-    </nav>
-    <!-- Home -->
-    <section id="home">
-      <img class="home__avatar"
-        src="https://avatars3.githubusercontent.com/u/20182365?s=400&u=b42f8d09da0bbba0a1aa030e2f2a184ecad8510f&v=4"
-        alt="it's deok9"></img>
-      <h1 class="home__title">
-        Hello, <br />
-        I'm deokgoo
-      </h1>
-      <h2 class="home__description">Frontend Developer</h2>
-      <button class="home__contact">Contact Me</button>
-    </section>
-    <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ducimus
-        eos quidem at molestias fugit non modi, velit voluptate illo nesciunt
-        voluptatum, sed magnam harum. Sequi dolores quidem laborum molestias.
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icons">
-            <i class="fab fa-vuejs"></i>
-          </div>
-          <h2 class="major__title">Frontend</h2>
-          <div class="major__description">
-            HTML, CSS, JavaScript, TypeScript,
-            <br />Vue, React
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icons">
-            <i class="fab fa-vuejs"></i>
-          </div>
-          <h2 class="major__title">Frontend</h2>
-          <div class="major__description">
-            HTML, CSS, JavaScript, TypeScript,
-            <br />Vue, React
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icons">
-            <i class="fab fa-vuejs"></i>
-          </div>
-          <h2 class="major__title">Frontend</h2>
-          <div class="major__description">
-            HTML, CSS, JavaScript, TypeScript,
-            <br />Vue, React
-          </div>
-        </div>
+      <h2 class="major__title">Frontend</h2>
+      <div class="major__description">
+        HTML, CSS, JavaScript, TypeScript,
+        <br/>Vue, React
       </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img src="assets/img/jobs/ffg-logo.png" alt="ffg" style="max-width:100vw" class="job__logo" />
-          <div class="job__description">
-            <p class="job__name">Currently working at FFG(Fukuoka Financial Group) as Software Engineer</p>
-          <p class="job__period">2019 April ~ Until now</p>
-          </div>
-        </div>
+    </div>
+    <div class="major">
+      <div class="major__icons">
+        <i class="fab fa-vuejs"></i>
       </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde
-        ullam, eos voluptatum facilis veniam aliquid. Voluptatem placeat eaque,
-        eum distinctio neque temporibus possimus, molestias libero laboriosam
-        asperiores velit perferendis.
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+      <h2 class="major__title">Frontend</h2>
+      <div class="major__description">
+        HTML, CSS, JavaScript, TypeScript,
+        <br/>Vue, React
+      </div>
+    </div>
+    <div class="major">
+      <div class="major__icons">
+        <i class="fab fa-vuejs"></i>
+      </div>
+      <h2 class="major__title">Frontend</h2>
+      <div class="major__description">
+        HTML, CSS, JavaScript, TypeScript,
+        <br/>Vue, React
+      </div>
+    </div>
+  </div>
+  <div class="about__jobs">
+    <div class="job">
+      <img src="assets/img/jobs/ffg-logo.png" alt="ffg" style="max-width:100vw" class="job__logo"/>
+      <div class="job__description">
+        <p class="job__name">Currently working at FFG(Fukuoka Financial Group) as Software Engineer</p>
+        <p class="job__period">2019 April ~ Until now</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills -->
+<section id="skills" class="section">
+  <div class="section__container">
+    <h1>Skills</h1>
+    <h2>Skills & Attributes</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde
+      ullam, eos voluptatum facilis veniam aliquid. Voluptatem placeat eaque,
+      eum distinctio neque temporibus possimus, molestias libero laboriosam
+      asperiores velit perferendis.
+    </p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>80%</span>
           </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
           </div>
         </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Intellij</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Android Studio Code</span></li>
-            </ul>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>80%</span>
           </div>
-          <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>Notion</span></li>
-              <li><span>Scrum</span></li>
-            </ul>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Work -->
-    <section id="work" class="section">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn active">
-          All
-          <span class="category__count">8</span>
-        </button>
-        <button class="category__btn">
-          Front-end
-          <span class="category__count">8</span>
-        </button>
-        <button class="category__btn">
-          Back-end
-          <span class="category__count">8</span>
-        </button>
-        <button class="category__btn">
-          Mobile
-          <span class="category__count">8</span>
-        </button>
-      </div>
-      <div class="work__projects">
-        <a href="" class="project" target="blank">
-          <img class="project__img" src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png" alt="" />
-          <div class="project__description">
-            <h3>Something Site</h3>
-            <span>Clone Something</span>
-          </div>
-        </a>
-        <a href="" class="project" target="blank">
-            <img class="project__img" src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png" alt="" />
-            <div class="project__description">
-              <h3>Something Site</h3>
-              <span>Clone Something</span>
-            </div>
-          </a>
-          <a href="" class="project" target="blank">
-            <img class="project__img" src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png" alt="" />
-            <div class="project__description">
-              <h3>Something Site</h3>
-              <span>Clone Something</span>
-            </div>
-          </a>
-          <a href="" class="project" target="blank">
-            <img class="project__img" src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png" alt="" />
-            <div class="project__description">
-              <h3>Something Site</h3>
-              <span>Clone Something</span>
-            </div>
-          </a>
-      </div>
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <div class="testimonials">
-        <div class="testimonial">
-          <img src="https://avatars3.githubusercontent.com/u/20182365?s=400&u=b42f8d09da0bbba0a1aa030e2f2a184ecad8510f&v=4"alt="" class="testimonial__avatar" />
-          <div class="testimonial__speech-bubble">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              odit, corporis soluta amet tenetur ab laudantium numquam
-              dignissimos? Ipsum unde atque aliquid consectetur illo reiciendis
-              iste sequi quos! In, perferendis.
-            </p>
-            <p class="name"><a href="">Ellie</a> / Samsung</p>
-          </div>
+      <div class="skillset__right">
+        <div class="tools">
+          <h3 class="skillset__title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Intellij</span></li>
+            <li><span>Visual Studio Code</span></li>
+            <li><span>Android Studio Code</span></li>
+          </ul>
         </div>
-        <div class="testimonial">
-          <img src="https://avatars3.githubusercontent.com/u/20182365?s=400&u=b42f8d09da0bbba0a1aa030e2f2a184ecad8510f&v=4" alt="" class="testimonial__avatar" />
-          <div class="0px;-bubble">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              odit, corporis soluta amet tenetur ab laudantium numquam
-              dignissimos? Ipsum unde atque aliquid consectetur illo reiciendis
-              iste sequi quos! In, perferendis.
-            </p>
-            <p class="name"><a href="">Ellie</a> / Samsung</p>
-          </div>
+        <div class="etc">
+          <h3 class="skillset__title">Etc</h3>
+          <ul class="etc__list">
+            <li><span>Git</span></li>
+            <li><span>Notion</span></li>
+            <li><span>Scrum</span></li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">kkddgg1001@gmail.com</h2>
-      <div class="contact__links">
-        <a href="https://github.com/deokgoo" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
+    </div>
+  </div>
+</section>
+<!-- Work -->
+<section id="work" class="section">
+  <div class="section__container">
+    <h1>My work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn active">
+        All
+        <span class="category__count">8</span>
+      </button>
+      <button class="category__btn">
+        Front-end
+        <span class="category__count">8</span>
+      </button>
+      <button class="category__btn">
+        Back-end
+        <span class="category__count">8</span>
+      </button>
+      <button class="category__btn">
+        Mobile
+        <span class="category__count">8</span>
+      </button>
+    </div>
+    <div class="work__projects">
+      <a href="" class="project" target="blank">
+        <img class="project__img"
+             src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png"
+             alt=""/>
+        <div class="project__description">
+          <h3>Something Site</h3>
+          <span>Clone Something</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank">
+        <img class="project__img"
+             src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png"
+             alt=""/>
+        <div class="project__description">
+          <h3>Something Site</h3>
+          <span>Clone Something</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank">
+        <img class="project__img"
+             src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png"
+             alt=""/>
+        <div class="project__description">
+          <h3>Something Site</h3>
+          <span>Clone Something</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank">
+        <img class="project__img"
+             src="https://github.com/deokgoo/vanilajs-mini_shopping_mall/raw/master/screenshot/capture.png"
+             alt=""/>
+        <div class="project__description">
+          <h3>Something Site</h3>
+          <span>Clone Something</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Testimonials -->
+<section id="testimonials" class="section">
+  <div class="section__container">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="https://avatars3.githubusercontent.com/u/20182365?s=400&u=b42f8d09da0bbba0a1aa030e2f2a184ecad8510f&v=4"
+             alt="" class="testimonial__avatar"/>
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            odit, corporis soluta amet tenetur ab laudantium numquam
+            dignissimos? Ipsum unde atque aliquid consectetur illo reiciendis
+            iste sequi quos! In, perferendis.
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
+        </div>
       </div>
-      <p class="contact__rights">
-        2020 deokgoo - All rights reserved
-      </p>
-    </section>
-  </body>
+      <div class="testimonial">
+        <img src="https://avatars3.githubusercontent.com/u/20182365?s=400&u=b42f8d09da0bbba0a1aa030e2f2a184ecad8510f&v=4"
+             alt="" class="testimonial__avatar"/>
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            odit, corporis soluta amet tenetur ab laudantium numquam
+            dignissimos? Ipsum unde atque aliquid consectetur illo reiciendis
+            iste sequi quos! In, perferendis.
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact -->
+<section id="contact" class="section">
+  <h1 class="contact__title">Let's talk</h1>
+  <h2 class="contact__email">kkddgg1001@gmail.com</h2>
+  <div class="contact__links">
+    <a href="https://github.com/deokgoo" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+  <p class="contact__rights">
+    2020 deokgoo - All rights reserved
+  </p>
+</section>
+</body>
+
 </html>
