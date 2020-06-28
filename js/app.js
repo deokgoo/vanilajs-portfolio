@@ -12,10 +12,13 @@ document.addEventListener('scroll', () => {
 })
 
 const navBarMenu = document.querySelector('.navbar__menu');
-navBarMenu.addEventListener('click', (evt) => {
+const contactMeBtn = document.querySelector('.home__contact');
+navBarMenu.addEventListener('click', scrollToTarget);
+contactMeBtn.addEventListener('click', scrollToTarget);
+
+function scrollToTarget(evt) {
   const { link } = evt.target.dataset;
   if(!link) return;
   const scrollTo = document.querySelector(link);
-  console.log(scrollTo);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
-})
+}
