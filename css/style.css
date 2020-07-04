@@ -462,20 +462,24 @@ p {
   animation: all var(--animation-duration) ease;
 }
 
-.nav-up {
+.arrow-up {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  color: var(--color-grey);
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  color: var(--color-custom-dark-blue);
   font-size: 65px;
-  display: none;
-  transition: all var(--animation-duration) ease;
+  border-radius: 50%;
+  transition: all var(--animation-duration) ease-in;
+  pointer-events: none;
 }
 
-.nav-up:hover {
+.arrow-up:hover {
   cursor: pointer;
+  pointer-events: auto;
 }
 
-.nav-up.active {
+.arrow-up.active {
   display: block;
+  opacity: 1;
 }

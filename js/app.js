@@ -1,7 +1,7 @@
 'use strict';
 
 const navBar = document.querySelector('#navbar');
-const navUp = document.querySelector('.nav-up');
+const navUp = document.querySelector('.arrow-up');
 const navBarHeight = navBar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
