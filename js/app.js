@@ -1,14 +1,21 @@
 'use strict';
 
 const navBar = document.querySelector('#navbar');
+const navUp = document.querySelector('.nav-up');
 const navBarHeight = navBar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
   if(window.scrollY > navBarHeight) {
     navBar.classList.add('navbar--dark');
+    navUp.classList.add('active');
   }else {
     navBar.classList.remove('navbar--dark');
+    navUp.classList.remove('active');
   }
+})
+
+navUp.addEventListener('click', () => {
+  window.scrollTo(0, 0);
 })
 
 const navBarMenu = document.querySelector('.navbar__menu');
@@ -29,5 +36,5 @@ document.addEventListener('scroll', () => {
   const home = document.querySelector('.home__container');
   const homeHeight = home.getBoundingClientRect().height;
 
-  home.setAttribute('style', `opacity: ${1-window.scrollY/homeHeight}`)
+  home.setAttribute('style', `opacity: ${0.9-window.scrollY/homeHeight}`)
 })

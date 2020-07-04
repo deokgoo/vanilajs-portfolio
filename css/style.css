@@ -461,3 +461,21 @@ p {
   color: var(--color-custom-light-yellow);
   animation: all var(--animation-duration) ease;
 }
+
+.nav-up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: var(--color-grey);
+  font-size: 65px;
+  display: none;
+  transition: all var(--animation-duration) ease;
+}
+
+.nav-up:hover {
+  cursor: pointer;
+}
+
+.nav-up.active {
+  display: block;
+}
