@@ -338,6 +338,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0.6;
+  transform: scale(0.9) translateY(40px);
 }
 
 .project {
@@ -350,6 +357,10 @@ p {
   margin: 2px;
   background-color: var(--color-light-white);
   transition: all var(--animation-duration) ease;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {

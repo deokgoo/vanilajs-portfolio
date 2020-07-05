@@ -38,3 +38,26 @@ document.addEventListener('scroll', () => {
 
   home.setAttribute('style', `opacity: ${0.9-window.scrollY/homeHeight}`)
 })
+
+// project
+const projectType = { ALL: 0, FRONTEND: 1, BACKEND: 2, MOBILE: 3 };
+let selectedType = projectType.ALL;
+const projects = document.querySelectorAll('.project');
+const projectContainer = document.querySelector('.work__projects');
+const workBtnContainer = document.querySelector('.work__categories');
+
+workBtnContainer.addEventListener('click', (e) => {
+  const select = e.target.dataset.select || e.target.parentNode.dataset.select;
+  if(typeof projectType[select] !== 'number') return;
+  selectedType = projectType[select];
+  projectContainer.classList.add('anim-out');
+  projects.forEach((x) => {
+    const { part } = x.dataset;
+    if(projectType[part] === selectedType || !selectedType) {
+      x.classList.remove('invisible');
+    } else {
+      x.classList.add('invisible');
+    }
+  })
+  setTimeout(() => projectContainer.classList.remove('anim-out'), 300);
+})
