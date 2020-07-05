@@ -1,10 +1,13 @@
 'use strict';
 
+// navBar 
 const navBar = document.querySelector('#navbar');
 const navUp = document.querySelector('.arrow-up');
 const navBarHeight = navBar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
+  const openNavBarMenu = document.querySelector('.navbar__menu.open');
+  openNavBarMenu.classList.remove('open');
   if(window.scrollY > navBarHeight) {
     navBar.classList.add('navbar--dark');
     navUp.classList.add('active');
@@ -30,6 +33,12 @@ function scrollHandler(evt) {
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
 
+// Navbar toggle button for small screen(height: below 768px)
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navBarMenu.classList.toggle('open');
+})
+
 // home smooth
 
 document.addEventListener('scroll', () => {
@@ -47,9 +56,14 @@ const projectContainer = document.querySelector('.work__projects');
 const workBtnContainer = document.querySelector('.work__categories');
 
 workBtnContainer.addEventListener('click', (e) => {
-  const select = e.target.dataset.select || e.target.parentNode.dataset.select;
+  const target = e.target.dataset.select ? e.target : e.target.parentNode
+  const select = target.dataset.select;
   if(typeof projectType[select] !== 'number') return;
   selectedType = projectType[select];
+  let active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  target.classList.add('selected');
+
   projectContainer.classList.add('anim-out');
   projects.forEach((x) => {
     const { part } = x.dataset;
